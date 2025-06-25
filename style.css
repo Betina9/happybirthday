@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: "Orbitron", sans-serif;
-  background-color: #a2d2ff;
+  background-color: #5dade2;
   color: #ffffff;
 }
 
@@ -14,4 +14,43 @@ h1,
 h2,
 h3 {
   text-shadow: 0px 0px 1px black;
+}
+
+.giftSection {
+  text-align: center;
+  margin-bottom: ;
+}
+
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 0 auto 20px auto;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.static {
+  opacity: 1;
+  z-index: 1;
+}
+
+.gif {
+  opacity: 0;
+  z-index: 2;
+}
+
+.image-container:hover .static {
+  opacity: 0;
+}
+
+.image-container:hover .gif {
+  opacity: 1;
 }
